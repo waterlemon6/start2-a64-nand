@@ -3,6 +3,7 @@ project(START2_20181029 C)
 
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_COMPILER aarch64-linux-gnu-gcc)
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O2")
 
 link_libraries(/home/waterlemon/jpeg/libjpeg-turbo-2.0.1/a64-64bit/a64/libjpeg.a)
 link_libraries(/home/waterlemon/jpeg/libjpeg-turbo-2.0.1/a64-64bit/a64/libturbojpeg.a)

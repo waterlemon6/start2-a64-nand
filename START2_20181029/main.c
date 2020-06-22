@@ -541,7 +541,7 @@ int MainProcess(int dpi, char color, int videoPortOffset)
                 spiBuffer[5] = 0x02;
                 spiBuffer[6] = 0x01;
                 spiBuffer[7] = 0x00;
-                spiBuffer[8] = 0x01;
+                spiBuffer[8] = 0x02;
                 KernelSPISendPackage(spiBuffer, 512);
                 usleep(2000);
                 break;

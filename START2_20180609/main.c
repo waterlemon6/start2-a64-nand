@@ -21,10 +21,10 @@ int main()
         return -2;
     printf("Read Section 0\n");
 
-    input[1] = ReadOneSection(&ImageHeader, "start_a64.rbf", UPDATE_MARK_RBF);
+    /*input[1] = ReadOneSection(&ImageHeader, "start_a64.rbf", UPDATE_MARK_RBF);
     if(input[1] == NULL)
         return -2;
-    printf("Read Section 1\n");
+    printf("Read Section 1\n");*/
 
     fwrite(&ImageHeader, sizeof(struct imageHeader), 1, output);
     for (int i = 0; i < ImageHeader.sectionCount; i++) {
